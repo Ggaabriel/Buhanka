@@ -1,0 +1,172 @@
+@use "../fn-mix" as fn;
+@use "../media-str" as media;
+
+/* =============== Padding =============== */
+.p {
+  &8 {
+    padding: fn.toRem(8);
+  }
+
+  &16 {
+    padding: fn.toRem(16);
+  }
+
+  &32 {
+    padding: fn.toRem(32);
+  }
+
+  &t {
+    &8 {
+      padding-top: fn.toRem(8);
+    }
+
+    &16 {
+      padding-top: fn.toRem(16);
+    }
+
+    &32 {
+      padding-top: fn.toRem(32);
+    }
+  }
+
+  &b {
+    &8 {
+      padding-bottom: fn.toRem(8);
+    }
+
+    &16 {
+      padding-bottom: fn.toRem(16);
+    }
+
+    &32 {
+      padding-bottom: fn.toRem(32);
+    }
+  }
+
+  &tb {
+    &5 {
+      padding-top: fn.toRem(5);
+      padding-bottom: fn.toRem(5);
+    }
+
+    &8 {
+      padding-top: fn.toRem(8);
+      padding-bottom: fn.toRem(8);
+    }
+
+    &16 {
+      padding-top: fn.toRem(16);
+      padding-bottom: fn.toRem(16);
+    }
+
+    &32 {
+      padding-top: fn.toRem(32);
+      padding-bottom: fn.toRem(32);
+    }
+
+    &40 {
+      padding-top: fn.toRem(40);
+      padding-bottom: fn.toRem(40);
+    }
+  }
+
+  &lr {
+    &0 {
+      padding-left: fn.toRem(0);
+      padding-right: fn.toRem(0);
+    }
+
+    &16 {
+      padding-left: fn.toRem(16);
+      padding-right: fn.toRem(16);
+    }
+
+    &32 {
+      padding-left: fn.toRem(32);
+      padding-right: fn.toRem(32);
+    }
+  }
+}
+
+@media #{ media.$media-max1024 } {
+  .--mob-p {
+    &8 {
+      padding: fn.toRem(8);
+    }
+
+    &16 {
+      padding: fn.toRem(16);
+    }
+
+    &32 {
+      padding: fn.toRem(32);
+    }
+
+    &t {
+      &8 {
+        padding-top: fn.toRem(8);
+      }
+
+      &16 {
+        padding-top: fn.toRem(16);
+      }
+
+      &32 {
+        padding-top: fn.toRem(32);
+      }
+    }
+
+    &b {
+      &8 {
+        padding-bottom: fn.toRem(8);
+      }
+
+      &16 {
+        padding-bottom: fn.toRem(16);
+      }
+
+      &32 {
+        padding-bottom: fn.toRem(32);
+      }
+    }
+
+    &tb {
+      &5 {
+        padding-top: fn.toRem(5);
+        padding-bottom: fn.toRem(5);
+      }
+
+      &8 {
+        padding-top: fn.toRem(8);
+        padding-bottom: fn.toRem(8);
+      }
+
+      &16 {
+        padding-top: fn.toRem(16);
+        padding-bottom: fn.toRem(16);
+      }
+
+      &32 {
+        padding-top: fn.toRem(32);
+        padding-bottom: fn.toRem(32);
+      }
+
+      &40 {
+        padding-top: fn.toRem(40);
+        padding-bottom: fn.toRem(40);
+      }
+    }
+
+    &lr {
+      &0 {
+        padding-left: fn.toRem(0);
+        padding-right: fn.toRem(0);
+      }
+
+      &16 {
+        padding-left: fn.toRem(16);
+        padding-right: fn.toRem(16);
+      }
+    }
+  }
+}

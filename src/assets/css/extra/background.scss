@@ -1,0 +1,38 @@
+/* =============== Background =============== */
+.bg- {
+  &white1 {
+    background: var(--c-white1);
+  }
+
+  &white2 {
+    background: var(--c-white2);
+  }
+
+  &white3 {
+    background: var(--c-white3);
+  }
+
+  &gray1 {
+    background: var(--c-gray1);
+  }
+
+  &gray2 {
+    background: var(--c-gray2);
+  }
+
+  &gray3 {
+    background: var(--c-gray3);
+  }
+
+  &black {
+    background: var(--c-black);
+  }
+
+  &red {
+    background: var(--c-red);
+  }
+
+  &green {
+    background: var(--c-green);
+  }
+}

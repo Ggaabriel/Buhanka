@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap');
+@import '../../../colors.scss';
+
+
+// .createAct h1 {
+//     color: $h1;
+//     font-family: 'Inter';
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 55px;
+//     line-height: 67px;
+//     position: relative;
+//     left: 211px;
+// }
+// .act {
+//     display: grid;
+//     grid-template-columns: 586px 744px;
+//     grid-template-rows: repeat(3, 1fr);
+//     grid-template-areas: 
+//     "vehicle vehicle"
+//     "works works"
+//     "parts parts"
+//     "total total";
+//     gap: 100px;
+//     position: relative;
+//     left: 341px;
+//     margin-top: 40px;
+
+//     &__block{
+//         &Small {
+//             height: 346px;
+//             position: relative;
+//         }
+
+//         &Large {
+//             height: 270px;
+//             position: relative;
+//             &Inputs {
+                
+//                 margin-left: 34px;
+//                 display: grid;
+//                 grid-template-columns: 214px 307px 131px;
+//                 grid-template-rows: repeat(2, 1fr);
+
+//                 column-gap: 40px;
+//                 row-gap: 40px;
+//                 input {
+//                     width: 100%;
+//                     height: 64px;
+//                     border-radius: 15px;
+//                     background-color: $input-bg;
+//                     border: none;
+//                     outline: none;
+//                     padding-left: 17px;
+//                     font-family: 'Inter';
+//                     font-style: normal;
+//                     font-weight: 600;
+//                     font-size: 25px;
+//                     line-height: 30px;
+//                     color: $text;
+//                     position: relative;
+//                 }
+//             }
+//             &Input{
+//                 position: relative;
+               
+//                 label {
+//                     top: -25px;
+//                     color: $input-label;
+//                     font-family: 'Nunito';
+//                     font-style: normal;
+//                     font-weight: 300;
+//                     font-size: 20px;
+//                     line-height: 20px;
+//                 }
+//             }
+//         }
+
+//         &Title {
+//             color: $h2;
+//             font-family: 'Inter';
+//             font-style: normal;
+//             font-weight: 600;
+//             font-size: 30px;
+//             line-height: 36px;
+//         }
+
+//         &Titles {
+//             display: flex;
+//             justify-content: space-between;
+//         }
+//     }
+
+//     &__vehicle {
+//         grid-area: vehicle;
+//     }
+
+//     &__works {
+//         grid-area: works;
+//     }
+
+//     &__parts {
+//         grid-area: parts;
+//     }
+
+//     &__card {
+//         height: 100%;
+//         background-color: $card-sec-bg;
+//         margin-top: 23px;
+//         border-radius: 15px;
+//         position: relative;
+
+//         &Header {
+//             background-color: $card-main-bg;
+//             border-radius: 15px 15px 0 0;
+
+//             h2 {
+//                 margin-left: 29px;
+//                 padding: 16px;
+//                 color: $h1;
+//                 font-family: 'Inter';
+//                 font-style: normal;
+//                 font-weight: 600;
+//                 font-size: 35px;
+//                 line-height: 42px;
+//             }
+//         }
+//         &Content {
+//             position: relative;
+//             label {
+//                 left: 31px;
+//                 color: $input-label;
+//                 font-family: 'Nunito';
+//                 font-style: normal;
+//                 font-weight: 300;
+//                 font-size: 20px;
+//                 line-height: 20px;
+//             }
+//             input {
+//                 width: 90%;
+//                 margin-left: 31px;
+//                 margin-top: 50px;
+//                 height: 64px;
+//                 border-radius: 15px;
+//                 background-color: $input-bg;
+//                 border: none;
+//                 outline: none;
+//                 padding-left: 17px;
+//                 font-family: 'Inter';
+//                 font-style: normal;
+//                 font-weight: 600;
+//                 font-size: 25px;
+//                 line-height: 30px;
+//                 color: $text;
+//             }
+//         }
+//         &Description {
+//             margin-left: 31px;
+//             margin-top: 4px;
+//             color: $input-deskription;
+//             font-family: 'Nunito';
+//             font-style: normal;
+//             font-weight: 300;
+//             font-size: 20px;
+//             line-height: 20px;
+//         }
+//     }
+
+//     &__close {
+//         width: 21px;
+//         height: 20px;
+//         position: absolute;
+//         right: 22px;
+//         top: 19px;
+//         cursor: pointer;
+//     }
+
+//     &__data {  
+//         margin-top: 16px;
+//         margin:auto;
+//         width: 80%;
+//         display: flex;
+//         gap: 50px;
+//         color: $card-info-text;
+//         font-family: 'Nunito';
+//         font-style: normal;
+//         font-weight: 300;
+//         font-size: 16px;
+//         line-height: 20px;
+//     }
+
+//     &__total {
+//         position: absolute;
+//         width: 307px;
+//         height: 64px;
+//         background-color: $input-label;
+//         border-radius: 15px;
+//         display: flex;
+//         padding-left: 20px;
+//         align-items: center;
+//         color: $card-main-bg;
+//         font-family: 'Nunito';
+//         font-style: normal;
+//         font-weight: 300;
+//         font-size: 20px;
+//         line-height: 20px;
+//         margin-top: 6px;
+//         &Wrapper {
+//             position: absolute;
+//             width: 307px;
+//             height: 64px;
+//             top: 131px;
+//             right: 55px;
+//         }
+//         &Label {
+//             color: $input-label;
+//             font-family: 'Nunito';
+//             font-style: normal;
+//             font-weight: 300;
+//             font-size: 20px;
+//             line-height: 20px;
+//         }
+        
+//     }
+//     &__mainTotal {
+//         text-align: end;
+//         color: $h1;
+//         font-family: 'Inter';
+//         font-style: normal;
+//         font-weight: 600;
+//         font-size: 40px;
+//         line-height: 48px;
+//         grid-area: total;
+//     }
+
+// }
+// .panel__input {
+//     width: 100%;
+//     height: 54px;
+//     border-radius: 15px;
+//     background-color: #3f3f3f;
+//     font-family: "Nunito";
+//     font-style: normal;
+//     font-weight: 300;
+//     font-size: 20px;
+//     line-height: 20px;
+//     color: #ffffff;
+//     outline: none;
+//     border: none;
+//     padding: 10px;
+//   }
+
+.wrapper{
+    margin: 50px;
+    display: grid;
+    height: 1350px;
+    grid-template-columns: 3fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 80px;
+}
+//Информация о машине с VIN номером
+.carInfo{
+    &__wrapper{
+        background-color: $card-main-bg;
+        border-radius: 15px;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        div{
+            display: flex;
+            gap: 20px;
+        }
+        button{
+            height: 64px;
+            background-color: $button-bg-dismis;
+            border-radius: 15px;
+            color: $button-action-dismis;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 20px;
+            border: none;
+            outline: none;
+        }
+    }
+
+    input {
+        height: 54px;
+        border-radius: 15px;
+        background-color: $input-bg;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        color: $text;
+        outline: none;
+        border: none;
+        padding: 10px;
+    }
+}
+//Информация о владельце машины
+.ownerInfo{
+    &__wrapper{
+        background-color: $card-main-bg;
+        border-radius: 15px;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        div{
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    input {
+        height: 54px;
+        border-radius: 15px;
+        background-color: $input-bg;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        color: $text;
+        outline: none;
+        border: none;
+        padding: 10px;
+    }
+}
+//Информация о вылоненных услугах
+.servicesInfo{
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/3;
+    gap: 30px;
+    &__wrapper{
+        background-color: $card-main-bg;
+        border-radius: 15px;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        >div:first-child{
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+        &__info{
+            display: grid;
+            grid-template-columns: 60% 1fr;
+            font-weight: 100;
+            >div:first-child{
+                display: grid;
+                grid-template-columns: 2fr 3fr 1fr;
+                grid-template-rows: 1fr;
+                gap: 40px;
+                align-items: center;
+                >div:first-child{
+                    grid-column: 1/3;
+                }
+                >div:nth-child(2){
+                    grid-row: 2/2;
+                }
+                >div:nth-child(3){
+                    grid-row: 2/2;
+                }
+                >div:nth-child(4){
+                    grid-row: 2/2;
+                }
+            }
+            >div:last-child{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }
+            >div:last-child>div>div{
+                padding: 30px;
+                background-color: $button-action-dismis;
+                border-radius: 15px;
+                color: $card-main-bg;
+                font-size: 20px;
+                font-weight: 300;
+
+            }
+            p{
+                padding: 10px;
+            }
+        }
+        button{
+            height: 64px;
+            background-color: $button-bg-dismis;
+            border-radius: 15px;
+            color: $button-action-dismis;
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 20px;
+            border: none;
+            outline: none;
+        }
+    }
+
+    input {
+        width: 100%;
+        height: 54px;
+        border-radius: 15px;
+        background-color: $input-bg;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        color: $text;
+        outline: none;
+        border: none;
+        padding: 10px;
+    }
+}
+.endButtonArea{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    >button{
+        width: 226px;
+        height: 64px;
+        background-color: $button-bg-action;
+        border-radius: 15px;
+        color: $button-action-text;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        
+    }
+    >div{
+        >button{
+            color: red;
+            border: none;
+            outline: none;
+            background: none;
+            cursor: pointer;
+        }
+    }
+}

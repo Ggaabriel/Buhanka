@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap');
+@import "../../../colors.scss";
+
+.panel {
+    &__wrapper {
+        width: 600px;
+        height: 100%;
+        background-color: $card-main-bg;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px 0px 0px 15px;
+        position: fixed;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        overflow: scroll;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__headline {
+        margin-top: 34px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 36px;
+        color: $h2;
+    }
+    &__block {  
+        width: 452px;
+        position: relative;
+        margin-top: 60px;
+    }
+    &__block ~ &__block {
+        margin-top: 40px;
+    }
+    &__label {
+        position: absolute;
+        top: -30px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        color: $input-label;
+    }
+    &__input {
+        width: 100%;
+        height: 54px;
+        border-radius: 15px;
+        background-color: $input-bg;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        color: $text;
+        outline: none;
+        border: none;
+        padding: 10px;
+    }
+    &__description {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        color: $input-deskription;
+        margin-top: 10px;
+    }
+    &__buttons {
+        margin-top: 128px;
+        padding-bottom: 31px;
+    }
+    &__submit {
+        width: 226px;
+        height: 64px;
+        background-color: $button-bg-action;
+        border-radius: 15px;
+        color: $button-action-text;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        border: none;
+        outline: none;
+    }
+    &__cancellation {
+        width: 147px;
+        height: 64px;
+        background-color: $button-bg-dismis;
+        border-radius: 15px;
+        color: $button-action-dismis;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 20px;
+        border: none;
+        outline: none;
+        margin-left: 12px;
+    }
+    &__searchRow{
+        max-height: 200px;
+        overflow: scroll;
+    }
+}

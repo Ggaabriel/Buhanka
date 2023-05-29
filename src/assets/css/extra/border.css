@@ -1,0 +1,21 @@
+/* =============== Width && Height =============== */
+/* =============== Margin && Padding =============== */
+/* =============== Flex =============== */
+/* =============== Background =============== */
+.br-5 {
+  border-radius: 0.3125rem;
+}
+.br-10 {
+  border-radius: 0.625rem;
+}
+.br-15 {
+  border-radius: 0.9375rem;
+}
+.br-20 {
+  border-radius: 1.25rem;
+}
+.br-25 {
+  border-radius: 1.5625rem;
+}
+
+/*# sourceMappingURL=border.css.map */

@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap");
+.wrapper {
+  margin: 50px;
+  display: grid;
+  height: 1350px;
+  grid-template-columns: 3fr 4fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 80px;
+}
+
+.carInfo__wrapper {
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.carInfo__wrapper div {
+  display: flex;
+  gap: 20px;
+}
+.carInfo__wrapper button {
+  height: 64px;
+  background-color: #3f3f3f;
+  border-radius: 15px;
+  color: #ffffff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+}
+.carInfo input {
+  height: 54px;
+  border-radius: 15px;
+  background-color: #3f3f3f;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.ownerInfo__wrapper {
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.ownerInfo__wrapper div {
+  display: flex;
+  gap: 20px;
+}
+.ownerInfo input {
+  height: 54px;
+  border-radius: 15px;
+  background-color: #3f3f3f;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.servicesInfo {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/3;
+  gap: 30px;
+}
+.servicesInfo__wrapper {
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.servicesInfo__wrapper > div:first-child {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.servicesInfo__wrapper__info {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  font-weight: 100;
+}
+.servicesInfo__wrapper__info > div:first-child {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 40px;
+  align-items: center;
+}
+.servicesInfo__wrapper__info > div:first-child > div:first-child {
+  grid-column: 1/3;
+}
+.servicesInfo__wrapper__info > div:first-child > div:nth-child(2) {
+  grid-row: 2/2;
+}
+.servicesInfo__wrapper__info > div:first-child > div:nth-child(3) {
+  grid-row: 2/2;
+}
+.servicesInfo__wrapper__info > div:first-child > div:nth-child(4) {
+  grid-row: 2/2;
+}
+.servicesInfo__wrapper__info > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.servicesInfo__wrapper__info > div:last-child > div > div {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  color: #1c1c1c;
+  font-size: 20px;
+  font-weight: 300;
+}
+.servicesInfo__wrapper__info p {
+  padding: 10px;
+}
+.servicesInfo__wrapper button {
+  height: 64px;
+  background-color: #3f3f3f;
+  border-radius: 15px;
+  color: #ffffff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+}
+.servicesInfo input {
+  width: 100%;
+  height: 54px;
+  border-radius: 15px;
+  background-color: #3f3f3f;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.endButtonArea {
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.endButtonArea > button {
+  width: 226px;
+  height: 64px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  color: #3f3f3f;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.endButtonArea > div > button {
+  color: red;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}/*# sourceMappingURL=creating.module.css.map */

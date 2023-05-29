@@ -1,0 +1,183 @@
+@function toRem($v) {
+  @return ($v / 16) + rem;
+}
+
+/* =============== Width && Height =============== */
+
+@mixin wh($width:100%, $height:100%) {
+  @if($width != false) { width: $width; }
+  @if($height != false) { height: $height; }
+}
+
+@mixin w($min:false, $max:false) {
+  @if($min) { min-width: $min; }
+  @if($max) { max-width: $max; }
+}
+
+@mixin h($min:false, $max:false) {
+  @if($min) { min-height: $min; }
+  @if($max) { max-height: $max; }
+}
+
+@mixin whRem($width:0, $height:0) {
+  @if($width != false) { width: toRem($width); }
+  @if($height != false) { height: toRem($height); }
+}
+
+@mixin wRem($min:0, $max:0) {
+  @if($min != false) { min-width: toRem($min); }
+  @if($max != false) { max-width: toRem($max); }
+}
+
+@mixin hRem($min:0, $max:0) {
+  @if($min != false) { min-height: toRem($min); }
+  @if($max != false) { max-height: toRem($max); }
+}
+
+/* =============== Margin && Padding =============== */
+
+@mixin mp($margin:false, $padding:false) {
+  @if($margin) { margin: $margin; }
+  @if($padding) { padding: $padding; }
+}
+
+@mixin m($margin:"") {
+  margin: #{$margin};
+}
+
+@mixin m2($tb:"0px", $rl:"0px") {
+  margin: #{$tb} #{$rl};
+}
+
+@mixin mtb($top:false, $bottom:false) {
+  @if($top) { margin-top: $top; }
+  @if($bottom) { margin-bottom: $bottom; }
+}
+
+@mixin mlr($left:false, $right:false) {
+  @if($left) { margin-top: $left; }
+  @if($right) { margin-bottom: $right; }
+}
+
+@mixin margin($left:false, $top:false, $right:false, $bottom:false) {
+  @if($left) { margin-left: $left; }
+  @if($top) { margin-top: $top; }
+  @if($right) { margin-right: $right; }
+  @if($bottom) { margin-bottom: $bottom; }
+}
+
+@mixin p($padding:"") {
+  padding: #{$padding};
+}
+
+@mixin p2($tb:"0px", $rl:"0px") {
+  padding: #{$tb} #{$rl};
+}
+
+@mixin ptb($top:false, $bottom:false) {
+  @if($top) { padding-top: $top; }
+  @if($bottom) { padding-bottom: $bottom; }
+}
+
+@mixin plr($left:false, $right:false) {
+  @if($left) { padding-left: $left; }
+  @if($right) { padding-bottom: $right; }
+}
+
+@mixin padding($left:false, $top:false, $right:false, $bottom:false) {
+  @if($left) { padding-left: $left; }
+  @if($top) { padding-top: $top; }
+  @if($right) { padding-right: $right; }
+  @if($bottom) { padding-bottom: $bottom; }
+}
+
+@mixin mpRem($margin:0, $padding:0) {
+  @if($margin != false) { margin: toRem($margin); }
+  @if($padding != false) { padding: toRem($padding); }
+}
+
+@mixin mRem($margin:0) {
+  margin: toRem($margin);
+}
+
+@mixin m2Rem($tb:0, $rl:0) {
+  margin: toRem($tb) toRem($rl);
+}
+
+@mixin mtbRem($top:0, $bottom:0) {
+  @if($top != false) { margin-top: toRem($top); }
+  @if($bottom != false) { margin-bottom: toRem($bottom); }
+}
+
+@mixin mlrRem($left:0, $right:0) {
+  @if($left != false) { margin-top: toRem($left); }
+  @if($right != false) { margin-bottom: toRem($right); }
+}
+
+@mixin marginRem($left:0, $top:0, $right:0, $bottom:0) {
+  @if($left != false) { margin-left: toRem($left); }
+  @if($top != false) { margin-top: toRem($top); }
+  @if($right != false) { margin-right: toRem($right); }
+  @if($bottom != false) { margin-bottom: toRem($bottom); }
+}
+
+@mixin pRem($padding:0) {
+  padding: toRem($padding);
+}
+
+@mixin p2Rem($tb:0, $rl:0) {
+  padding: toRem($tb) toRem($rl);
+}
+
+@mixin ptbRem($top:0, $bottom:0) {
+  @if($top != false) { padding-top: toRem($top); }
+  @if($bottom != false) { padding-bottom: toRem($bottom); }
+}
+
+@mixin plrRem($left:0, $right:0) {
+  @if($left != false) { padding-left: toRem($left); }
+  @if($right != false) { padding-right: toRem($right); }
+}
+
+@mixin paddingRem($left:0, $top:0, $right:0, $bottom:0) {
+  @if($left) != false { padding-left: toRem($left); }
+  @if($top != false) { padding-top: toRem($top); }
+  @if($right != false) { padding-right: toRem($right); }
+  @if($bottom != false) { padding-bottom: toRem($bottom); }
+}
+
+/* =============== Flex =============== */
+
+@mixin f($flex:row, $align:false, $justify:false, $gap:false) {
+  display: flex;
+  flex-direction: $flex;
+
+  @if($align) { align-items: $align; }
+  @if($justify) { justify-content: $justify; }
+  @if($gap) { gap: $gap; }
+}
+
+@mixin fc($align:false, $justify:false, $gap:false) {
+  display: flex;
+  flex-direction: column;
+
+  @if($align) { align-items: $align; }
+  @if($justify) { justify-content: $justify; }
+  @if($gap) { gap: toRem($gap); }
+}
+
+@mixin fr($align:false, $justify:false, $gap:false) {
+  display: flex;
+  flex-direction: row;
+
+  @if($align) { align-items: $align; }
+  @if($justify) { justify-content: $justify; }
+  @if($gap) { gap: toRem($gap); }
+}
+
+/* =============== Background =============== */
+
+@mixin bg($url, $position:center, $repeat:no-repeat, $size:cover) {
+  background: url($url) $position $repeat;
+  background-size: $size;
+}

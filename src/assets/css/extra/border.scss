@@ -1,0 +1,23 @@
+@use "../fn-mix" as fn;
+
+.br {
+  &5 {
+    border-radius: fn.toRem(5);
+  }
+
+  &10 {
+    border-radius: fn.toRem(10);
+  }
+
+  &15 {
+    border-radius: fn.toRem(15);
+  }
+
+  &20 {
+    border-radius: fn.toRem(20);
+  }
+
+  &25 {
+    border-radius: fn.toRem(25);
+  }
+}

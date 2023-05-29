@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+.mainTable {
+  border-collapse: collapse;
+  color: #ffffff;
+  text-align: left;
+  width: 100%;
+}
+.mainTable caption {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.mainTable tr:not(:first-of-type):not(:last-child) {
+  border-bottom: 1px solid #3f3f3f;
+}
+.mainTable tr:not(:first-of-type) td {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 200;
+}
+.mainTable tr:not(:first-of-type):hover {
+  background-color: #1c1c1c;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.mainTable tr:first-of-type {
+  border-radius: 5px;
+  background-color: #3f3f3f;
+}
+.mainTable tr:first-of-type th {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: #b7b7b7;
+  font-size: 20px;
+  padding: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border: none;
+}
+.mainTable tr:first-of-type th:first-child {
+  border-radius: 15px 0 0 15px;
+}
+.mainTable tr:first-of-type th:last-child {
+  border-radius: 0 15px 15px 0;
+}
+.mainTable tr:first-of-type td {
+  border: none;
+}
+.mainTable__die {
+  color: red;
+  opacity: 50;
+}
+.mainTable__deletedPage {
+  background-color: #3f3f3f;
+  width: 229px;
+  height: 68px;
+  border-radius: 15px;
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+}
+.mainTable__editArea {
+  position: relative;
+}
+.mainTable__compVehicles {
+  overflow: auto;
+  background-color: #3f3f3f;
+  height: 300px;
+  border-radius: 15px;
+  position: absolute;
+}/*# sourceMappingURL=Table.module.css.map */

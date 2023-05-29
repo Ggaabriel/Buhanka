@@ -1,0 +1,106 @@
+/* =============== Width && Height =============== */
+/* =============== Margin && Padding =============== */
+/* =============== Flex =============== */
+/* =============== Background =============== */
+/* =============== Margin =============== */
+.mt8 {
+  margin-top: 0.5rem;
+}
+.mt16 {
+  margin-top: 1rem;
+}
+.mt25 {
+  margin-top: 1.5625rem;
+}
+.mt32 {
+  margin-top: 2rem;
+}
+.mt40 {
+  margin-top: 2.5rem;
+}
+.mt50 {
+  margin-top: 3.125rem;
+}
+.mt88 {
+  margin-top: 5.5rem;
+}
+.mt90 {
+  margin-top: 5.625rem;
+}
+.mb8 {
+  margin-bottom: 0.5rem;
+}
+.mb16 {
+  margin-bottom: 1rem;
+}
+.mb25 {
+  margin-bottom: 1.5625rem;
+}
+.mb32 {
+  margin-bottom: 2rem;
+}
+.mb40 {
+  margin-bottom: 2.5rem;
+}
+.mb50 {
+  margin-bottom: 3.125rem;
+}
+.mb88 {
+  margin-bottom: 5.5rem;
+}
+.mb90 {
+  margin-bottom: 5.625rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .--mob-mt8 {
+    margin-top: 0.5rem;
+  }
+  .--mob-mt16 {
+    margin-top: 1rem;
+  }
+  .--mob-mt25 {
+    margin-top: 1.5625rem;
+  }
+  .--mob-mt32 {
+    margin-top: 2rem;
+  }
+  .--mob-mt40 {
+    margin-top: 2.5rem;
+  }
+  .--mob-mt50 {
+    margin-top: 3.125rem;
+  }
+  .--mob-mt88 {
+    margin-top: 5.5rem;
+  }
+  .--mob-mt90 {
+    margin-top: 5.625rem;
+  }
+  .--mob-mb8 {
+    margin-bottom: 0.5rem;
+  }
+  .--mob-mb16 {
+    margin-bottom: 1rem;
+  }
+  .--mob-mb25 {
+    margin-bottom: 1.5625rem;
+  }
+  .--mob-mb32 {
+    margin-bottom: 2rem;
+  }
+  .--mob-mb40 {
+    margin-bottom: 2.5rem;
+  }
+  .--mob-mb50 {
+    margin-bottom: 3.125rem;
+  }
+  .--mob-mb88 {
+    margin-bottom: 5.5rem;
+  }
+  .--mob-mb90 {
+    margin-bottom: 5.625rem;
+  }
+}
+
+/*# sourceMappingURL=margin.css.map */

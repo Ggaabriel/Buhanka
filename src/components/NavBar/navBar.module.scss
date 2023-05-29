@@ -1,0 +1,81 @@
+@use "../../assets/css/fn-mix" as fn;
+@import '../../colors.scss';
+
+.nav {
+    @include fn.wh($height:fit-content);
+    @include fn.fc($align:center, $justify:flex-start, $gap:32);
+    @include fn.pRem(16);
+
+    position: sticky;
+    top: fn.toRem(32);
+    z-index: 100;
+
+    background: var(--c-gray1);
+    border-radius: fn.toRem(16);
+
+    .nav_link {
+        width: 100%;
+        @include fn.fc($align:center, $justify:flex-start, $gap:4);
+        opacity: .7;
+        text-align: center;
+        transition: .3s ease-out;
+
+        svg {
+            @include fn.wRem(30, 30);
+            @include fn.hRem(30, 30);
+            fill: var(--c-white1);
+        }
+
+        p {
+            color: var(--c-white1);
+            font: normal 500 fn.toRem(12)/fn.toRem(16) 'Inter';
+        }
+
+        &:hover,
+        &[aria-current="page"] {
+            opacity: 1;
+        }
+    }
+}
+
+.leftNavigation{
+    width: 150px;
+    background-color: $nav-background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+    max-height: 800px;
+    // max-height: 90vh;
+    border-radius: 14px;
+    text-align: center;
+    a{
+        &:hover{
+            cursor: pointer;
+            svg{
+                fill: $nav-icons-color-active;
+            }
+            p{
+                color: $nav-icons-text-active;
+            }
+        }
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        svg{
+            width: 100%;
+            height: 100%;
+            max-width: 33px;
+            max-height: 33px;
+            fill: $nav-icons-color-no-active;
+        }
+        p{
+            color: $nav-icons-text-no-active;
+            font-size: 15px;
+        }
+    }
+}

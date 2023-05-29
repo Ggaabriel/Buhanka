@@ -1,0 +1,16 @@
+@import "extra/margin";
+@import "extra/padding";
+@import "extra/display";
+
+@import "extra/font";
+@import "extra/border";
+@import "extra/background";
+
+.no-script-msg {
+  width: 100%;
+  text-align: center;
+}
+
+.content {
+  position: relative;
+}

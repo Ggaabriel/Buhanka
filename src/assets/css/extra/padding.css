@@ -1,0 +1,120 @@
+/* =============== Width && Height =============== */
+/* =============== Margin && Padding =============== */
+/* =============== Flex =============== */
+/* =============== Background =============== */
+/* =============== Padding =============== */
+.p8 {
+  padding: 0.5rem;
+}
+.p16 {
+  padding: 1rem;
+}
+.p32 {
+  padding: 2rem;
+}
+.pt8 {
+  padding-top: 0.5rem;
+}
+.pt16 {
+  padding-top: 1rem;
+}
+.pt32 {
+  padding-top: 2rem;
+}
+.pb8 {
+  padding-bottom: 0.5rem;
+}
+.pb16 {
+  padding-bottom: 1rem;
+}
+.pb32 {
+  padding-bottom: 2rem;
+}
+.ptb5 {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+}
+.ptb8 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.ptb16 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.ptb32 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.ptb40 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.plr0 {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+.plr16 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .--mob-p8 {
+    padding: 0.5rem;
+  }
+  .--mob-p16 {
+    padding: 1rem;
+  }
+  .--mob-p32 {
+    padding: 2rem;
+  }
+  .--mob-pt8 {
+    padding-top: 0.5rem;
+  }
+  .--mob-pt16 {
+    padding-top: 1rem;
+  }
+  .--mob-pt32 {
+    padding-top: 2rem;
+  }
+  .--mob-pb8 {
+    padding-bottom: 0.5rem;
+  }
+  .--mob-pb16 {
+    padding-bottom: 1rem;
+  }
+  .--mob-pb32 {
+    padding-bottom: 2rem;
+  }
+  .--mob-ptb5 {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+  }
+  .--mob-ptb8 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .--mob-ptb16 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .--mob-ptb32 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .--mob-ptb40 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .--mob-plr0 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  .--mob-plr16 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/*# sourceMappingURL=padding.css.map */

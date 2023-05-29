@@ -1,0 +1,30 @@
+/* =============== Background =============== */
+.bg-white1 {
+  background: var(--c-white1);
+}
+.bg-white2 {
+  background: var(--c-white2);
+}
+.bg-white3 {
+  background: var(--c-white3);
+}
+.bg-gray1 {
+  background: var(--c-gray1);
+}
+.bg-gray2 {
+  background: var(--c-gray2);
+}
+.bg-gray3 {
+  background: var(--c-gray3);
+}
+.bg-black {
+  background: var(--c-black);
+}
+.bg-red {
+  background: var(--c-red);
+}
+.bg-green {
+  background: var(--c-green);
+}
+
+/*# sourceMappingURL=background.css.map */

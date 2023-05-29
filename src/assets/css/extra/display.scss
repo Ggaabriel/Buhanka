@@ -1,0 +1,312 @@
+@use "../fn-mix" as fn;
+@use "../media-str" as media;
+
+/* =============== Flex && Grid =============== */
+.flex {
+    display: flex;
+
+    /* ===== Flex Direction ===== */
+    &.col {
+        flex-direction: column;
+    }
+
+    &.row-rev {
+        flex-direction: row-reverse;
+    }
+
+    &.col-rev {
+        flex-direction: column-reverse;
+    }
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+
+    &.wrap-rev {
+        flex-wrap: wrap-reverse;
+    }
+
+    @media #{media.$media-max1024} {
+        &.--mob- {
+            &row {
+                flex-direction: row;
+            }
+
+            &row-rev {
+                flex-direction: row-reverse;
+            }
+
+            &col {
+                flex-direction: column;
+            }
+
+            &col-rev {
+                flex-direction: column-reverse;
+            }
+
+            &wrap {
+                flex-wrap: wrap;
+            }
+
+            &wrap-rev {
+                flex-wrap: wrap-reverse;
+            }
+        }
+    }
+}
+
+.grid {
+    display: grid;
+
+    &.col {
+        &-app {
+            grid-template-columns: min-content 1fr;
+
+            @media #{media.$media-max1024} {
+                @include fn.plrRem(16, 16);
+            }
+        }
+
+        &-center {
+            grid-template-columns: repeat(1, minmax( fn.toRem(300), fn.toRem(1400) ));
+
+            @media #{media.$media-max1024} {
+                @include fn.plrRem(16, 16);
+            }
+        }
+
+        &1 {
+            grid-template-columns: 1fr;
+        }
+
+        &2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media #{media.$media-max1024} {
+        &.--mob-col {
+            &1 {
+                grid-template-columns: 1fr;
+            }
+
+            &2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+/* ===== Align Items ===== */
+.a- {
+    &center {
+        align-items: center;
+    }
+
+    &end {
+        align-items: flex-end;
+    }
+
+    &start {
+        align-items: flex-start;
+    }
+}
+
+.--self-a- {
+    &center {
+        align-self: center;
+    }
+
+    &end {
+        align-self: flex-end;
+    }
+
+    &start {
+        align-self: flex-start;
+    }
+}
+
+/* ===== Justify Content ===== */
+.j- {
+    &center {
+        justify-content: center;
+    }
+
+    &around {
+        justify-content: space-around;
+    }
+
+    &evenly {
+        justify-content: space-evenly;
+    }
+
+    &between {
+        justify-content: space-between;
+    }
+
+    &end {
+        justify-content: flex-end;
+    }
+
+    &start {
+        justify-content: flex-start;
+    }
+}
+
+.--self-j- {
+    &center {
+        justify-self: center;
+    }
+
+    &end {
+        justify-self: flex-end;
+    }
+
+    &start {
+        justify-self: flex-start;
+    }
+}
+
+/* ===== Gap ===== */
+.g {
+    &3 {
+        gap: fn.toRem(3);
+    }
+
+    &5 {
+        gap: fn.toRem(5);
+    }
+
+    &8 {
+        gap: fn.toRem(8);
+    }
+
+    &10 {
+        gap: fn.toRem(10);
+    }
+
+    &12 {
+        gap: fn.toRem(12);
+    }
+
+    &16 {
+        gap: fn.toRem(16);
+    }
+
+    &20 {
+        gap: fn.toRem(20);
+    }
+
+    &32 {
+        gap: fn.toRem(32);
+    }
+
+    &40 {
+        gap: fn.toRem(40);
+    }
+
+    &50 {
+        gap: fn.toRem(50);
+    }
+
+    &60 {
+        gap: fn.toRem(60);
+    }
+
+    &88 {
+        gap: fn.toRem(88);
+    }
+
+    &110 {
+        gap: fn.toRem(110);
+    }
+}
+
+@media #{ media.$media-max1024 } {
+    .--mob-g {
+        &0 {
+            gap: fn.toRem(0);
+        }
+
+        &3 {
+            gap: fn.toRem(3);
+        }
+
+        &5 {
+            gap: fn.toRem(5);
+        }
+
+        &8 {
+            gap: fn.toRem(8);
+        }
+
+        &12 {
+            gap: fn.toRem(12);
+        }
+
+        &16 {
+            gap: fn.toRem(16);
+        }
+
+        &20 {
+            gap: fn.toRem(20);
+        }
+
+        &32 {
+            gap: fn.toRem(32);
+        }
+
+        &40 {
+            gap: fn.toRem(40);
+        }
+
+        &60 {
+            gap: fn.toRem(60);
+        }
+
+        &88 {
+            gap: fn.toRem(88);
+        }
+
+        &110 {
+            gap: fn.toRem(110);
+        }
+    }
+}
+
+/* =============== Display:none =============== */
+.d- {
+    &none {
+        display: none;
+    }
+
+    &desk {
+        @media #{media.$media-max1024}  {
+            display: none;
+        }
+    }
+
+    &mob {
+        display: none;
+
+        @media #{media.$media-max1024}  {
+            display: block;
+
+            &.grid {
+                display: grid;
+            }
+
+            &.flex {
+                display: flex;
+            }
+        }
+    }
+}
+
+*[aria-hidden="true"] {
+    display: none !important;
+}

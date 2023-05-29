@@ -1,0 +1,77 @@
+@use "../../assets/css/fn-mix" as fn;
+@import '../../colors.scss';
+
+.statistics {
+    @include fn.fr($align:center, $gap:16);
+
+    .item {
+        width: 100%;
+        max-width: fn.toRem(250);
+        @include fn.pRem(32);
+        @include fn.fc($gap:4);
+        background: var(--c-gray1);
+        border-radius: fn.toRem(16);
+
+        &.more .item__count::after,
+        &.less .item__count::after {
+            content: "";
+            display: block;
+            margin-top: fn.toRem(8);
+            border: fn.toRem(10) solid transparent;
+            border-top: fn.toRem(10) solid var(--c-green);
+        }
+
+        &.less .item__count::after {
+            border-top-color: var(--c-red);
+        }
+
+        .item__count {
+            @include fn.fr($gap:4);
+            position: relative;
+            color: var(--c-white1);
+            font: normal 700 fn.toRem(85)/100% 'Inter';
+        }
+
+        .item__title {
+            color: var(--c-white1);
+            font: normal 300 fn.toRem(20)/fn.toRem(25) 'Inter';
+        }
+    }
+}
+
+.tileBloks{
+    width: 100%;
+    display: flex;
+    .titleItem{
+        min-width: 235px;
+        padding: 20px;
+        background-color: $blocks-main-bg-color;
+        border-radius: 15px;
+        margin: 17px 15px 0 0;
+        .count{
+            position: relative;
+            line-height: 85px;
+            font-size: 85px;
+            font-weight: bold;
+        }
+        .grow:after{
+            content: ''; 
+            position: absolute;
+            margin-top: 10px;
+            border: 10px solid transparent;
+            border-top: 10px solid $green;
+        }
+        .down:after{
+            content: ''; 
+            position: absolute;
+            margin-top: 10px;
+            border: 10px solid transparent;
+            border-top: 10px solid $red;
+        }
+        p{
+            max-width: 235px;
+            font-weight: 300;
+            font-size: 25px;
+        }
+    }
+}

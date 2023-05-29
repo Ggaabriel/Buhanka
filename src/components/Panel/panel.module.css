@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito&display=swap");
+.panel__wrapper {
+  width: 600px;
+  height: 100%;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px 0px 0px 15px;
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  overflow: auto;
+}
+.panel__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.panel__headline {
+  margin-top: 34px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: #b7b7b7;
+}
+.panel__block {
+  width: 452px;
+  position: relative;
+  margin-top: 60px;
+}
+.panel__block ~ .panel__block {
+  margin-top: 40px;
+}
+.panel__label {
+  position: absolute;
+  top: -30px;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.panel__input {
+  width: 100%;
+  height: 54px;
+  border-radius: 15px;
+  background-color: #3f3f3f;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+.panel__description {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #3f3f3f;
+  margin-top: 10px;
+}
+.panel__buttons {
+  margin-top: 128px;
+  padding-bottom: 31px;
+}
+.panel__submit {
+  width: 226px;
+  height: 64px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  color: #3f3f3f;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+}
+.panel__cancellation {
+  width: 147px;
+  height: 64px;
+  background-color: #3f3f3f;
+  border-radius: 15px;
+  color: #ffffff;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  margin-left: 12px;
+}
+.panel__searchRow {
+  max-height: 200px;
+  overflow: scroll;
+}/*# sourceMappingURL=panel.module.css.map */

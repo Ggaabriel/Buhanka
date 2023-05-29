@@ -1,0 +1,145 @@
+@use "../fn-mix" as fn;
+@use "../media-str" as media;
+
+/* =============== Margin =============== */
+.m {
+  &t {
+    &8 {
+      margin-top: fn.toRem(8);
+    }
+
+    &16 {
+      margin-top: fn.toRem(16);
+    }
+
+    &25 {
+      margin-top: fn.toRem(25);
+    }
+
+    &32 {
+      margin-top: fn.toRem(32);
+    }
+
+    &40 {
+      margin-top: fn.toRem(40);
+    }
+
+    &50 {
+      margin-top: fn.toRem(50);
+    }
+
+    &88 {
+      margin-top: fn.toRem(88);
+    }
+
+    &90 {
+      margin-top: fn.toRem(90);
+    }
+  }
+
+  &b {
+    &8 {
+      margin-bottom: fn.toRem(8);
+    }
+
+    &16 {
+      margin-bottom: fn.toRem(16);
+    }
+
+    &25 {
+      margin-bottom: fn.toRem(25);
+    }
+
+    &32 {
+      margin-bottom: fn.toRem(32);
+    }
+
+    &40 {
+      margin-bottom: fn.toRem(40);
+    }
+
+    &50 {
+      margin-bottom: fn.toRem(50);
+    }
+
+    &88 {
+      margin-bottom: fn.toRem(88);
+    }
+
+    &90 {
+      margin-bottom: fn.toRem(90);
+    }
+  }
+}
+
+@media #{ media.$media-max1024 } {
+  .--mob-m {
+    &t {
+      &8 {
+        margin-top: fn.toRem(8);
+      }
+
+      &16 {
+        margin-top: fn.toRem(16);
+      }
+
+      &25 {
+        margin-top: fn.toRem(25);
+      }
+
+      &32 {
+        margin-top: fn.toRem(32);
+      }
+
+      &40 {
+        margin-top: fn.toRem(40);
+      }
+
+      &50 {
+        margin-top: fn.toRem(50);
+      }
+
+      &88 {
+        margin-top: fn.toRem(88);
+      }
+
+      &90 {
+        margin-top: fn.toRem(90);
+      }
+    }
+
+    &b {
+      &8 {
+        margin-bottom: fn.toRem(8);
+      }
+
+      &16 {
+        margin-bottom: fn.toRem(16);
+      }
+
+      &25 {
+        margin-bottom: fn.toRem(25);
+      }
+
+      &32 {
+        margin-bottom: fn.toRem(32);
+      }
+
+      &40 {
+        margin-bottom: fn.toRem(40);
+      }
+
+      &50 {
+        margin-bottom: fn.toRem(50);
+      }
+
+      &88 {
+        margin-bottom: fn.toRem(88);
+      }
+
+      &90 {
+        margin-bottom: fn.toRem(90);
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+@use "../fn-mix" as fn;
+@use "../media-str" as media;
+
+/* =============== Color =============== */
+.c- {
+  &white1 {
+    color: var(--c-white1);
+  }
+
+  &white2 {
+    color: var(--c-white2);
+  }
+
+  &white3 {
+    color: var(--c-white3);
+  }
+
+  &gray1 {
+    color: var(--c-gray1);
+  }
+
+  &gray2 {
+    color: var(--c-gray2);
+  }
+
+  &gray3 {
+    color: var(--c-gray3);
+  }
+
+  &black {
+    color: var(--c-black);
+  }
+
+  &red {
+    color: var(--c-red);
+  }
+
+  &green {
+    color: var(--c-green);
+  }
+}
+
+/* =============== Font =============== */
+.font {
+  /* ===== Complex ===== */
+  &.f {
+    &46 {
+      font: normal 700 fn.toRem(46)/100% 'Inter';
+    }
+
+    &32 {
+      font: normal 700 fn.toRem(32)/fn.toRem(44) 'Inter';
+    }
+
+    &24 {
+      font: normal 600 fn.toRem(24)/fn.toRem(30) 'Inter';
+    }
+
+    &22 {
+      font: normal 600 fn.toRem(22)/fn.toRem(27) 'Inter';
+    }
+
+    &20 {
+      font: normal 600 fn.toRem(20)/fn.toRem(27) 'Inter';
+    }
+
+    &16 {
+      font: normal 400 fn.toRem(16)/fn.toRem(22) 'Inter';
+    }
+
+    &14 {
+      font: normal 500 fn.toRem(14)/fn.toRem(20) 'Inter';
+    }
+
+    &12 {
+      font: normal 500 fn.toRem(12)/fn.toRem(16) 'Inter';
+    }
+
+    &10 {
+      font: normal 500 fn.toRem(10)/fn.toRem(13) 'Inter';
+    }
+  }
+
+  /* ===== Size ===== */
+  &.s {
+    &16 {
+      font-size: fn.toRem(16);
+    }
+
+    &20 {
+      font-size: fn.toRem(20);
+    }
+
+    &22 {
+      font-size: fn.toRem(22);
+    }
+
+    &32 {
+      font-size: fn.toRem(32);
+    }
+
+    &44 {
+      font-size: fn.toRem(44);
+    }
+  }
+
+  @media #{ media.$media-max1024 } {
+    &.--mob-s {
+      &10 {
+        font-size: fn.toRem(10);
+      }
+
+      &12 {
+        font-size: fn.toRem(12);
+      }
+
+      &14 {
+        font-size: fn.toRem(14);
+      }
+
+      &16 {
+        font-size: fn.toRem(16);
+      }
+
+      &20 {
+        font-size: fn.toRem(20);
+      }
+
+      &32 {
+        font-size: fn.toRem(32);
+      }
+
+      &44 {
+        font-size: fn.toRem(44);
+      }
+    }
+  }
+
+  /* ===== Line Height ===== */
+  &.lh {
+    &22 {
+      line-height: fn.toRem(22);
+    }
+
+    &44 {
+      line-height: fn.toRem(44);
+    }
+  }
+
+  @media #{ media.$media-max1024 } {
+    &.--mob-lh- {
+      &12 {
+        line-height: fn.toRem(12);
+      }
+
+      &18 {
+        line-height: fn.toRem(18);
+      }
+
+      &22 {
+        line-height: fn.toRem(22);
+      }
+
+      &44 {
+        line-height: fn.toRem(44);
+      }
+    }
+  }
+
+  /* ===== Weight ===== */
+  &.w {
+    &300 {
+      font-weight: 300;
+    }
+
+    &500 {
+      font-weight: 500;
+    }
+
+    &600 {
+      font-weight: 600;
+    }
+
+    &700 {
+      font-weight: 700;
+    }
+  }
+
+  @media #{ media.$media-max1024 } {
+    &.--mob-w- {
+      &300 {
+        font-weight: 300;
+      }
+
+      &500 {
+        font-weight: 500;
+      }
+
+      &600 {
+        font-weight: 600;
+      }
+
+      &700 {
+        font-weight: 700;
+      }
+    }
+  }
+
+  /* ===== Text Transform ===== */
+  &.tt- {
+    &up {
+      text-transform: uppercase;
+    }
+
+    &low {
+      text-transform: lowercase;
+    }
+
+    &cap {
+      text-transform: capitalize;
+    }
+
+    &reg {
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+/* =============== Width && Height =============== */
+/* =============== Margin && Padding =============== */
+/* =============== Flex =============== */
+/* =============== Background =============== */
+.statistics {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.statistics .item {
+  width: 100%;
+  max-width: 15.625rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: var(--c-gray1);
+  border-radius: 1rem;
+}
+.statistics .item.more .item__count::after, .statistics .item.less .item__count::after {
+  content: "";
+  display: block;
+  margin-top: 0.5rem;
+  border: 0.625rem solid transparent;
+  border-top: 0.625rem solid var(--c-green);
+}
+.statistics .item.less .item__count::after {
+  border-top-color: var(--c-red);
+}
+.statistics .item .item__count {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  position: relative;
+  color: var(--c-white1);
+  font: normal 700 5.3125rem/100% "Inter";
+}
+.statistics .item .item__title {
+  color: var(--c-white1);
+  font: normal 300 1.25rem/1.5625rem "Inter";
+}
+
+.tileBloks {
+  width: 100%;
+  display: flex;
+}
+.tileBloks .titleItem {
+  min-width: 235px;
+  padding: 20px;
+  background-color: #3f3f3f;
+  border-radius: 15px;
+  margin: 17px 15px 0 0;
+}
+.tileBloks .titleItem .count {
+  position: relative;
+  line-height: 85px;
+  font-size: 85px;
+  font-weight: bold;
+}
+.tileBloks .titleItem .grow:after {
+  content: "";
+  position: absolute;
+  margin-top: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #00ffa3;
+}
+.tileBloks .titleItem .down:after {
+  content: "";
+  position: absolute;
+  margin-top: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #ff3951;
+}
+.tileBloks .titleItem p {
+  max-width: 235px;
+  font-weight: 300;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=Main.module.css.map */
