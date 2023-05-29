@@ -36,7 +36,7 @@ const initialState = {
                 mileage: `0 км`,
                 vin: `JF2SJAAC3GH458111`,
                 owner: `Серёжкин Сергей Сергеевич`,
-                acts: `1`,
+                acts: `0`,
             },
             deleted: false,
             preDelete: false,

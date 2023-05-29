@@ -17,17 +17,17 @@ const Main = ({ title, subtitle }) => {
 
             <div className={ s.statistics }>
                 <div className={ [s.item, s.more].join(" ") }>
-                    <p className={ s.item__count }>12</p>
+                    <p className={ s.item__count }>1</p>
                     <p className={ s.item__title }>Актов заполнено сегодня</p>
                 </div>
 
-                <div className={ [s.item, s.less].join(" ") }>
-                    <p className={ s.item__count }>12</p>
+                <div className={ [s.item, s.more].join(" ") }>
+                    <p className={ s.item__count }>1</p>
                     <p className={ s.item__title }>Актов заполнено <br/>за месяц</p>
                 </div>
 
                 <div className={ [s.item, s.more].join(" ") }>
-                    <p className={ s.item__count }>124</p>
+                    <p className={ s.item__count }>2</p>
                     <p className={ s.item__title }>Новых клиентов <br/>за месяц</p>
                 </div>
             </div>

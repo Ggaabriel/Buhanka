@@ -19,7 +19,7 @@ const initialState = {
                 number: `+7(966)123-34-84`,
                 email: `asdf@gmail.com`,
                 carCount: null,
-                actsCount: 2,
+                actsCount: 1,
                 discount: `10%`
             },
             deleted: false,
@@ -32,7 +32,7 @@ const initialState = {
                 number: `123`,
                 email: `123@gmail.com`,
                 carCount: null,
-                actsCount: 2,
+                actsCount: 0,
                 discount: `0%`
             },
             deleted: false,
